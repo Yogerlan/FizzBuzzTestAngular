@@ -1,0 +1,23 @@
+<div class="modal-header bg-dark text-light">
+    <h5 class="modal-title" id="exampleModalLabel">Validating Fizz-Buzz test</h5>
+    <button type="button" class="btn-close btn-light" aria-label="Close" (click)="modalRef.close()"></button>
+</div>
+<div class="modal-body">
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">#</th>
+                <th scope="col" class="text-center">Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let val of getValidations()">
+                <th scope="row" class="text-center">{{val.index}}</th>
+                <td class="text-center">{{val.result}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-dark" (click)="modalRef.close()">Close</button>
+</div>

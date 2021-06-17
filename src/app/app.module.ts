@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
@@ -24,6 +25,7 @@ import { MainComponent } from './main/main.component';
 import { LeftColumnComponent } from './left-column/left-column.component';
 import { RightColumnComponent } from './right-column/right-column.component';
 import { TestFormComponent } from './test-form/test-form.component';
+import { ValidateModalComponent } from './validate-modal/validate-modal.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +35,7 @@ import { TestFormComponent } from './test-form/test-form.component';
     LeftColumnComponent,
     RightColumnComponent,
     TestFormComponent,
+    ValidateModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { TestFormComponent } from './test-form/test-form.component';
     MdbValidationModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [BaseComponent]
