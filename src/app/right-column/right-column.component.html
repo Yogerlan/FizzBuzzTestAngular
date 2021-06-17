@@ -1,0 +1,14 @@
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col" class="text-center">#</th>
+            <th scope="col" class="text-center">Result</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fb of getFizzBuzz()">
+            <th scope="row" class="text-center">{{fb.index}}</th>
+            <td class="text-center">{{fb.value}}</td>
+        </tr>
+    </tbody>
+</table>

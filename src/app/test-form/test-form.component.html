@@ -1,0 +1,35 @@
+<form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+    <div class="row mt-3">
+        <div class="col">
+            <mdb-form-control>
+                <input id="fizz" mdbInput type="number" class="form-control" formControlName="fizz" />
+                <label mdbLabel class="form-label" for="fizz">Fizz</label>
+            </mdb-form-control>
+        </div>
+        <div class="col">
+            <mdb-form-control>
+                <input id="buzz" mdbInput type="number" class="form-control" formControlName="buzz" />
+                <label mdbLabel class="form-label" for="buzz">Buzz</label>
+            </mdb-form-control>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <mdb-form-control>
+                <input id="start" mdbInput type="number" class="form-control" formControlName="start" />
+                <label mdbLabel class="form-label" for="start">Start</label>
+            </mdb-form-control>
+        </div>
+        <div class="col">
+            <mdb-form-control>
+                <input id="end" mdbInput type="number" class="form-control" formControlName="end" />
+                <label mdbLabel class="form-label" for="end">End</label>
+            </mdb-form-control>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col">
+            <button type="submit" class="btn btn-dark ripple-surface">Run test</button>
+        </div>
+    </div>
+</form>
